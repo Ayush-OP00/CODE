@@ -13,4 +13,12 @@ class book_history:
         self.book = book
         self.issue_date = issue_date
         self.return_date = return_date
-
+class user:
+    def __init__(self, id, name, roll_no, email, mobile, semester, department):
+        self.id = id
+        self.name = name
+        self.roll_no = roll_no
+        self.email = email
+        self.mobile = mobile
+        self.semester = semester
+        self.department = department
