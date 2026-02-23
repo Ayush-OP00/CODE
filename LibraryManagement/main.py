@@ -8,8 +8,9 @@ class book:
         self.units = units
         self.available_units = available_units
 class book_history:
-    def __init__(self, user, book, issue_date, return_date):
+    def __init__(self, user, id, book, issue_date, return_date):
         self.user = user
+        self.id = id
         self.book = book
         self.issue_date = issue_date
         self.return_date = return_date
