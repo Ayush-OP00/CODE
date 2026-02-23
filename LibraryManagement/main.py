@@ -22,3 +22,16 @@ class user:
         self.mobile = mobile
         self.semester = semester
         self.department = department
+class admin:
+    def __init__(self):
+        self.books = []
+        self.users = []
+        self.book_history = []
+        def add_book(self, id, title, author, units):
+            new_book = book(id, title, author, units, available_units=units)
+            self.books.append(new_book)
+        def add_user(self, id, name, roll_no, email, mobile, semester, department):
+            new_user = user(id, name, roll_no, email, mobile, semester, department)
+            self.users.append(new_user)
+        def issue_book(self, user_id, book_id, issue_date, return_date):
+            
