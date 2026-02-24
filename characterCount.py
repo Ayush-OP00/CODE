@@ -1,32 +1,14 @@
 a= "python session"
-count = 0
-for i in a:
-    if i == "p":
-        count += 1
-        print("p= ", count)
-    elif i == "y":
-        count += 1
-        print("y= ", count)
-    elif i == "t":
-        count += 1
-        print("t= ", count)     
-    elif i == "h":
-        count += 1
-        print("h= ", count)
-    elif i == "o":
-        count += 1
-        print("o= ", count)
-    elif i == "n":
-        count += 1
-        print("n= ", count)
-    elif i == "s":
-        count += 1
-        print("s= ", count)
-    elif i == "e":
-        count += 1
-        print("e= ", count)
-    elif i == "i":
-        count += 1
-        print("i= ", count)
-else :
-    print("Invalid character")
+
+char_count = {}
+
+for char in a: # iterating through each character in the string
+    if char != " ":
+        if char in char_count:
+            char_count[char] += 1
+        else:
+            char_count[char] = 1
+
+for key, value in char_count.items():
+    print(f"{key} = {value}")
+        
