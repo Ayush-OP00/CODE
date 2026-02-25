@@ -2,7 +2,7 @@ a= "python session"
 
 char_count = {}
 
-for char in a: # iterating through each character in the string
+for char in a: # iterating through each character in the string 
     if char != " ":
         if char in char_count:
             char_count[char] += 1
